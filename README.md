@@ -13,6 +13,9 @@ Samples
 ```
 include gluster
 ```
+```
+gluster::service { 'default': ensure => running, enable => true }
+```
 
 License
 -------
