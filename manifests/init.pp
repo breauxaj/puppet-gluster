@@ -30,7 +30,7 @@ class gluster (
   $ensure = 'latest'
 ){
   $required = $::operatingsystem ? {
-    /(?i-mx:centos|fedora|redhat|scientific)/ => 'glusterfs-server',
+    /(?i-mx:centos|fedora|redhat|scientific)/ => 'glusterfs',
   }
 
   package { $required: ensure => $ensure }
