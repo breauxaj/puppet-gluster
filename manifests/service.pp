@@ -7,7 +7,7 @@ define gluster::service (
   }
 
   $depends = $::operatingsystem ? {
-    /(?i-mx:centos|fedora|redhat|scientific)/ => [ 'glusterfs' ],
+    /(?i-mx:centos|fedora|redhat|scientific)/ => [ 'glusterfs-server' ],
   }
 
   service { $service:
